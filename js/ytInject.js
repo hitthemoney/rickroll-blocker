@@ -58,7 +58,7 @@ function rickRollCheck() {
 
             for (i in badTitles) {
                 if (title.toLowerCase().includes(badTitles[i])) {
-                    onRickroll()
+                    //onRickroll()
                     /*var currentRickrolls;
                     chrome.storage.local.get(['rickrolls'], function (result) {
                         currentRickrolls = result

@@ -5,8 +5,20 @@
     "author": "hitthemoney",
     "description": "haha no more rickrolls",
     "browser_action": {
+        "default_icon": {
+            "16": "./images/16.png",
+            "32": "./images/32.png",
+            "128": "./images/128.png",
+            "512": "./images/512.png"
+        },
         "default_popup": "popup.html",
         "default_title": "No More Rickrolls"
+    },
+    "icons": {
+        "16": "./images/16.png",
+        "32": "./images/32.png",
+        "128": "./images/128.png",
+        "512": "./images/512.png"
     },
     "content_scripts": [{
         "matches": ["*://*.youtube.com/*"],
