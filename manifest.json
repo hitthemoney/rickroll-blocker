@@ -1,0 +1,26 @@
+{
+    "name": "Rickroll Blocker",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "author": "hitthemoney",
+    "description": "haha no more rickrolls",
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "No More Rickrolls"
+    },
+    "content_scripts": [{
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["./js/ytInject.js"],
+        "run-at": "document-start"
+    }],
+    "web_accessible_resources": [
+        "social.html"
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "cookies",
+        "storage",
+        "*://*/*"
+    ]
+}
